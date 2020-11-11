@@ -6,6 +6,7 @@ $(document).ready(function () {
         sectionsColor: ['#AACF52', '#4BBFC3', '#7BAABE', '#E5E5E5']
     });
 });
+/* Page slide end */
 
 /* Img slide */
 var slideIndex = 1;
@@ -38,3 +39,4 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+/* Img slide end */
