@@ -12,7 +12,7 @@ if($pw!=$pwc) {
 }
 if($id==NULL || $pw==NULL || $name==NULL || $email==NULL) {
     echo "빈 칸을 모두 채워주세요.";
-    echo "<a href=signUp.html>back page</a>"
+    echo "<a href=signUp.html>back page</a>";
     exit();
 }
 
