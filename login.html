@@ -4,29 +4,91 @@
 <head>
     <meta charset="utf-8">
     <title>loginTestPage</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            width: 350px;
+        }
+
+        h1 {
+            margin: 40px 0px 20px 0px;
+            color: rgb(95, 181, 214);
+            font-size: 3em;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            border-bottom: 2px solid rgb(95, 181, 214);
+            color: rgb(95, 181, 214);
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 350px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            font-weight: bold;
+            padding: 5px 25px;
+            height: 50px;
+            border: 0px;
+            background-color: rgb(235, 235, 235);
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            margin: 10px 0px 0px 0px;
+            border-radius: 30px;
+            background-color: rgb(95, 181, 214);
+            color: snow;
+            font-weight: bold;
+            border: 0px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        button {
+            margin: 20px;
+            float: right;
+            border: 0px;
+            background-color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            cursor: pointer;
+            color: rgb(95, 181, 214);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Login</h1>
+    <h1>DONG</h1>
+    <h3>아이디 로그인</h3>
     <div class="loginContainer">
         <form action="./login_check.php" method="post">
             <div>
-                <label for="id">ID </label>
-                <input type="text" name="id">
+                <input type="text" name="id" placeholder="아이디" required>
             </div>
             <div>
-                <label for="pw">PW </label>
-                <input type="password" name="pw">
+                <input type="password" name="pw" placeholder="비밀번호" required>
             </div>
 
             <div class="button">
-                <input type="submit" value="Login">
+                <input type="submit" value="로그인">
             </div>
         </form>
         <!-- <button onclick="location.href='signUp.html'"> Sign up</button> -->
         <button
-            onclick="window.open('./signUp.html', 'Sign Up', 'width=500px, height=600px, left=710px, top=200px, scrollbars=no, resizble=0, status=auto, menubar=0')">Sign
-            up</button>
+            onclick="window.open('./signUp.html', 'Sign Up', 'width=480px, height=620px, left=710px, top=200px, scrollbars=no, resizble=0, status=auto, menubar=0')">회원가입</button>
     </div>
 </body>
 
