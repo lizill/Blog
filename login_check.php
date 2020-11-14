@@ -1,20 +1,25 @@
 <?php
+session_start();
 $id=$_POST['id'];
 $pw=$_POST['pw'];
+$mysqli=mysqli_connect("localhost", "lizill", "kc9452", "login");
 
-if($id==NULL) {
-    // alert('아이디를 입력하세요.');
-    
-    echo "비밀번호와 비밀번호 확인이 서로 다릅니다.";
-    echo "<a href=signUp.html>back page</a>";
-    exit();
+$check="SELECT * FROM user_info WHERE userID='$id'";
+$result=$mysqli->query($check);
+if($result->num_rows==1) {
+    $row=$result->fetch_array(MYSQLI_ASSOC);
+    if($row['userPW']==$pw) {
+        $_SESSION['userID']=$id;
+        if(isset($_SESSION['userID'])) {
+            header('Location: ./home.html');
+        } else {
+            echo "세션 저장 실패";
+        }
+    } else {
+        echo "비밀번호 또는 아이디가 틀렸습니다.";
+    }
 }
-if($pw==NULL) {
-    alert('패스워드를 입력하세요.')
-    
-    echo "비밀번호와 비밀번호 확인이 서로 다릅니다.";
-    echo "<a href=signUp.html>back page</a>";
-    exit();
+else {
+    echo "비밀번호 또는 아이디가 틀렸습니다.";
 }
-
 ?>

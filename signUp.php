@@ -17,7 +17,7 @@ if($id==NULL || $pw==NULL || $name==NULL || $email==NULL) {
     exit();
 }
 
-$mysqli=mysqli_connect("localhost", "lizill", "lizill", "logintest");
+$mysqli=mysqli_connect("localhost", "lizill", "kc9452", "login");
 
 $check="SELECT * from user_info WHERE userID='$id'";
 $result=$mysqli->query($check);
@@ -31,7 +31,7 @@ $signup=mysqli_query($mysqli, "INSERT INTO user_info (userID, userPW, userName, 
 VALUES ('$id', '$pw', '$name', '$email')");
 if($signup) {
     echo "회원가입이 완료 되었습니다.";
-    echo "<a href=signUp.html>back page</a>";
+    echo "<a href=login.html>back page</a>";
     exit;
 } 
 

@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>loginTestPage</title>
-    </head>
-    <body>
-        <h1>Login</h1>
-        <div class="loginContainer">
-            <form action="./login_check.php" method="post">
-                <div>
-                    <label for="id">ID </label>
-                    <input type="text" name="id">
-                </div>
-                <div>
-                    <label for="pw">PW </label>
-                    <input type="password" name="pw">
-                </div>
 
-                <div class="button">
-                    <input type="submit" value="Login">
-                </div>
-            </form>
-            <button onclick="location.href='signUp.html'"> Sign up</button>
-        </div>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>loginTestPage</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <div class="loginContainer">
+        <form action="./login_check.php" method="post">
+            <div>
+                <label for="id">ID </label>
+                <input type="text" name="id">
+            </div>
+            <div>
+                <label for="pw">PW </label>
+                <input type="password" name="pw">
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <!-- <button onclick="location.href='signUp.html'"> Sign up</button> -->
+        <button
+            onclick="window.open('./signUp.html', 'Sign Up', 'width=500px, height=600px, left=710px, top=200px, scrollbars=no, resizble=0, status=auto, menubar=0')">Sign
+            up</button>
+    </div>
+</body>
+
 </html>
