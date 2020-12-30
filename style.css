@@ -75,6 +75,11 @@ img {
   margin: 0;
 }
 
+.mediaWrap {
+  margin: 0 auto;
+  width: 1280px;
+}
+
 .media {
   display: inline-block;
   width: 300px;
@@ -82,7 +87,7 @@ img {
   background-color: rgba(255, 255, 255, 0.514);
   font-weight: 700;
   margin: 40px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.6s;
 }
 
