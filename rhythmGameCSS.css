@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-user-select: none;
+}
+
+body {
+    background-color: #1e1d21;
+}
+
+header {
+    background-color: #5639ac;
+    cursor: pointer;
+}
+
+.menuBar {
+    line-height: 3em;
+    padding-left: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.topMenu a {
+    font-weight: bold;
+    color: gray;
+    padding: 8px;
+    display: block;
+    transition: 0.3s;
+}
+
+.topMenu a:hover {
+    color: white;
+}
+
+.topMenu {
+    position: absolute;
+    background-color: #302e38;
+    height: 0px;
+    width: 100%;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.main {
+    text-align: center;
+    height: 510px;
+    overflow: hidden;
+    background-image: url("./rhythmGameBackground.gif");
+    background-size: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main p:nth-child(1) {
+    margin-top: 200px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.main p:nth-child(2) {
+    color: #ff99cc;
+    margin-bottom: 20px;
+}
+
+.download {
+    display: inline-block;
+    border-radius: 5px;
+    border: 0px;
+    width: 223px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 60px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #5639ac;
+}
+
+.download:hover {
+    background-color: #8a6ae7;
+}
