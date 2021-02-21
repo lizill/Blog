@@ -12,11 +12,15 @@ body {
 }
 
 header {
-    background-color: #5639ac;
-    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    background-color: #020202a4;
+    height: 0px;
 }
 
 .menuBar {
+    background-color: #5639ac;
+    cursor: pointer;
     line-height: 3em;
     padding-left: 26px;
     font-weight: bold;
@@ -36,12 +40,10 @@ header {
 }
 
 .topMenu {
-    position: absolute;
     background-color: #302e38;
-    height: 0px;
-    width: 100%;
     overflow-y: hidden;
-    transition: 0.5s;
+    height: 0px;
+    transition: 0.3s;
 }
 
 .main {
@@ -65,7 +67,7 @@ header {
     margin-bottom: 20px;
 }
 
-.download {
+.downloadBtn {
     display: inline-block;
     border-radius: 5px;
     border: 0px;
@@ -80,6 +82,65 @@ header {
     background-color: #5639ac;
 }
 
-.download:hover {
+.downloadBtn:hover {
     background-color: #8a6ae7;
+}
+
+section {
+    text-align: center;
+}
+
+section a {
+    display: block;
+    margin: 15px 10px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #302e38;
+    height: 210px;
+}
+
+section a:hover {
+    background-color: #494554;
+    cursor: pointer;
+}
+
+.moreDetails {
+    display: inline-block;
+    margin: 5px 10px 20px 10px;
+    border-radius: 13px;
+    background-color: #494554;
+    height: 26px;
+    width: 106px;
+    font-size: 0.8em;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+}
+
+.moreDetails:hover {
+    background-color: #64606e;
+}
+
+footer {
+    background-color: #020202;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+footer a {
+    display: inline-block;
+    margin: 4px;
+    color: #ffddee;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    color: white;
+    margin-top: 25px;
 }

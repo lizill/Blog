@@ -1,15 +1,17 @@
 window.addEventListener('load', function() {
-    const menuBar = document.querySelector('.menuBar');
+    const header = document.querySelector('header');
     const topMenu = document.querySelector('.topMenu');
 
     let openMenu = false;
 
-    menuBar.addEventListener('click', function() {
+    header.addEventListener('click', function() {
         if(openMenu) {
             topMenu.style.height = '0px';
+            header.style.height = '0px';
             openMenu = false;
         } else {
             topMenu.style.height = '148px';
+            header.style.height = '100vh';
             openMenu = true;
         }
     });
