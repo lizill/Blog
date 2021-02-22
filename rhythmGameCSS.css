@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #1e1d21;
+    background-color: #020202;
 }
 
 header {
@@ -16,6 +16,10 @@ header {
     width: 100%;
     background-color: #020202a4;
     height: 0px;
+}
+
+.contents {
+    background-color: #1e1d21;
 }
 
 .menuBar {
@@ -44,6 +48,10 @@ header {
     overflow-y: hidden;
     height: 0px;
     transition: 0.3s;
+}
+
+.topMenu2 {
+    display: none;
 }
 
 .main {
@@ -122,7 +130,6 @@ section a:hover {
 }
 
 footer {
-    background-color: #020202;
     padding: 25px;
     text-align: center;
     font-size: 0.8em;
@@ -143,4 +150,87 @@ footer a:hover {
 footer p {
     color: white;
     margin-top: 25px;
+}
+
+@media screen and (min-width: 900px) {
+
+    .menuBar {
+        display: none;
+    }
+
+    .topMenu {
+        display: none;
+    }
+
+    .topMenu2 {
+        display: block;
+        margin: 0px auto;
+        padding: 20px 15px;
+        width: 900px;
+        height: 60px;
+        background-color: #1e1d21;
+    }
+
+    .topMenu2 a {
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: white;
+        margin: 0px 10px;
+        transition: 0.3s;
+    }
+
+    .topMenu2 a:hover {
+        color: #dd5097;
+    }
+
+    .topMenu2 a:nth-child(1) {
+        float: right;
+    }
+
+    .main {
+        width: 900px;
+        margin: 0 auto;
+        padding-right: 70px;
+        text-align: right;
+    }
+
+    .downloadBtn {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    section a {
+        display: inline-block;
+        margin: 0px;
+        width: 290px;
+    }
+
+    section a:nth-child(1) {
+        margin: 15px 0px;
+        width: 900px;
+    }
+
+    .moreDetails {
+        margin: 20px 397px;
+    }
+
+    footer {
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    footer p {
+        width: 100%;
+    }
 }
