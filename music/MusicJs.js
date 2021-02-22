@@ -35,11 +35,11 @@ window.addEventListener('load', function() {
 
     // 재생 버튼
     function pauseMusicBT() {
-        playAndpauseBT.innerHTML = '<img src="./img/pauseBT.png">';
+        playAndpauseBT.innerHTML = '<img src="../img/pauseBT.png">';
         playORpause = -1;
     }
     function playMusicBT() {
-        playAndpauseBT.innerHTML = '<img src="./img/playBT.png">';
+        playAndpauseBT.innerHTML = '<img src="../img/playBT.png">';
         playORpause = 1;
     }
 

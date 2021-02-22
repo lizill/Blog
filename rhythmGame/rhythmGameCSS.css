@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     -webkit-user-select: none;
 }
 
@@ -31,6 +30,13 @@ header {
     color: white;
 }
 
+.topMenu {
+    background-color: #302e38;
+    overflow-y: hidden;
+    height: 0px;
+    transition: 0.3s;
+}
+
 .topMenu a {
     font-weight: bold;
     color: gray;
@@ -43,11 +49,14 @@ header {
     color: white;
 }
 
-.topMenu {
-    background-color: #302e38;
-    overflow-y: hidden;
-    height: 0px;
-    transition: 0.3s;
+.topMenu ul {
+    padding-left: 30px;
+    list-style: square;
+    color: gray;
+}
+
+.topMenu li:hover {
+    color: white;
 }
 
 .topMenu2 {

@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
             header.style.height = '0px';
             openMenu = false;
         } else {
-            topMenu.style.height = '148px';
+            topMenu.style.height = '222px'; // 37px
             header.style.height = '100vh';
             openMenu = true;
         }
