@@ -111,9 +111,43 @@ section a {
     display: block;
     margin: 15px 10px;
     border: 0px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #302e38;
     height: 210px;
+    position: relative;
+}
+
+section img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+section p {
+    text-align: left;
+    padding-left: 15px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+section p:nth-child(2n) {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+.mainImageDiv {
+    position: absolute;
+    width: 115px;
+    line-height: 22px;
+    right: 15px;
+    top: 10px;
+    color: white;
+    background-color: #18171C80;
+    border-radius: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
 }
 
 section a:hover {
