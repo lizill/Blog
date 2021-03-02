@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リズムゲーム</title>
+    <link rel="stylesheet" href="../rhythmGameHelpCSS.css">
+    <script src="../rhythmGameJS.js"></script>
+    <script src="../rhythmGameHelpJS.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menuBar">ナレッジベース</div>
+        <div class="topMenu">
+            <a href="../../login.html">サインイン / 登録</a>
+            <ul>
+                <li><a href="./rhythmGameMain.html">ホーム</a></li>
+                <li><a href="#">ランキング</a></li>
+                <li><a href="#">コミュニティ</a></li>
+                <li><a href="#">ヘルプ</a></li>
+                <li><a href="../rhythmGameHelp.html">한국어</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="topMenu2">
+        <div>
+            <a href="../../login.html">サインイン</a>
+            <a href="./rhythmGameMain.html">ホーム</a>
+            <a href="#">ランキング</a>
+            <a href="#">コミュニティ</a>
+            <a href="./rhythmGameHelp.html">ヘルプ</a>
+            <a href="../rhythmGameHelp.html">한국어</a>
+        </div>
+    </div>
+
+    <div class="contents">
+        <nav class="topNav">
+            <a href="./rhythmGameMain.html">ホーム</a>
+            <span>></span>
+            <a href="./rhythmGameHelp.html">ヘルプ</a>
+        </nav>
+
+        <nav id="articleNav1" class="articleNav">
+            <p class="articleP">内容</p>
+            <ul class="articleUl">
+                <li><a href="#mainMenu">メインメニュー</a></li>
+                <li><a href="#musicSelect">曲選択画面</a></li>
+                <li><a href="#gamePlay">プレー画面</a></li>
+                <li><a href="#gameResult">結果画面</a></li>
+            </ul>
+        </nav>
+
+        <nav id="articleNav2" class="articleNav">
+            <p>内容</p>
+            <ul>
+                <li><a href="#mainMenu">メインメニュー</a></li>
+                <li><a href="#musicSelect">曲選択画面</a></li>
+                <li><a href="#gamePlay">プレー画面</a></li>
+                <li><a href="#gameResult">結果画面</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 id="mainMenu">メインメニュー</h1>
+            <img src="../mainMenuImage.png" alt="mainImage">
+            <legend>メインメニュー</legend>
+            <ul>
+                <li>게임 실행 시 첫 로그인 화면 입니다.</li>
+                <li>데이터베이스와 연동하여, 회원가입을 하여 로그인 할 수
+                    있도록 구현하였습니다. 절차에 따라 회원가입을 진행해 주세요.</li>
+                <li>GEST Login을 통해 서버에 연결 할 수 없는 상황에서도
+                    게임을 플레이 할 수 있습니다.</li>
+            </ul>
+
+            <h1 id="musicSelect">曲選択画面</h1>
+            <img src="../selectMusicImage.png" alt="mainImage">
+            <legend>曲選択画面</legend>
+            <ul>
+                <li>左、右ボタンで曲を選んで、Easy、Hardボタンでそれぞれのゲームをプレイできます。</li>
+                <li>로그인 시 3등까지의 User Rank를 확인할 수 있습니다. 아이디와
+                    최고 점수가 표시 됩니다.</li>
+                <li>GEST Login 의 경우 게임을 실행하는 동안 하단의
+                    최고 점수는 표시되나, 랭크에는 반영되지 
+                    않습니다.</li>
+            </ul>
+
+            <h1 id="gamePlay">プレー画面</h1>
+            <img src="../gamePlayImage.png" alt="mainImage">
+            <legend>プレー画面</legend>
+            <ul>
+                <li>Easy 또는 Hard 버튼 클릭 시 게임이 시작
+                    됩니다.</li>
+                <li>Easy 난이도는 4개의 키패드만 사용하고,
+                    Hard 난이도는 Space Bar 를 추가하여 
+                    5개의 키패드를 사용합니다.</li>
+                <li>판정에 따라 Perfect, Great, Good, Miss 로
+                    표시 되며, Miss 판정 시 콤보 수가 0으로 
+                    돌아갑니다.</li>
+                <li>하단에서 곡의 제목과 현재 점수, 난이도를
+                    확인할 수 있습니다.</li>
+            </ul>
+
+            <h1 id="gameResult">結果画面</h1>
+            <img src="../gameResultImage.png" alt="mainImage">
+            <legend>結果画面</legend>
+            <ul>
+                <li>곡 재생이 끝나면 결과 화면이 표시 됩니다.</li>
+                <li>뒤로가기 버튼으로 곡 선택 화면으로 돌아갈 수 있습니다.</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div><a href="./rhythmGameMain.html">ホーム</a></div>
+            <div><a href="#">ランキング</a></div>
+            <div><a href="./rhythmGameHelp.html">ヘルプ</a></div>
+            <div><a href="https://github.com/lizill/RhythmGame" target="_blank">ソースコード</a></div>
+            <p>Benchmarking https://osu.ppy.sh/</p>
+        </footer>
+    </div>
+</body>
+</html>
